@@ -1,2 +1,33 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+// Futuristic minimalist theme variables
+:root {
+	/* Primary palette (soft teal/cyan) */
+	--ion-color-primary: #36e6d0;
+	--ion-color-primary-rgb: 54,230,208;
+	--ion-color-primary-contrast: #051018;
+
+	--ion-color-secondary: #70d9ff;
+	--ion-color-tertiary: #8a7dff;
+	--ion-color-success: #2ee6a6;
+	--ion-color-warning: #ffb86b;
+	--ion-color-danger: #ff6b6b;
+
+	/* Background / text */
+	--ion-background-color: #071222; /* deep navy */
+	--ion-text-color: #cfeef7; /* soft cyan-white */
+
+	/* UI surfaces */
+	--ion-item-background: rgba(255,255,255,0.02);
+	--ion-card-background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	--ion-border-color: rgba(255,255,255,0.06);
+
+	/* Layout tokens */
+	--ion-border-radius: 12px;
+	--ion-box-shadow: 0 10px 30px rgba(56,150,200,0.06);
+
+	/* Typography */
+	--ion-font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+/* Ionic-specific variable fallbacks */
+html { color: var(--ion-text-color); background: var(--ion-background-color); }
+

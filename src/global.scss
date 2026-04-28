@@ -35,3 +35,55 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+/* Global theme tweaks for minimalist futuristic look */
+html, body, ion-app, ion-content {
+	font-family: var(--ion-font-family);
+	color: var(--ion-text-color);
+	background: var(--ion-background-color) !important;
+}
+
+ion-header, ion-toolbar {
+	--background: rgba(9,18,34,0.45);
+	--color: var(--ion-text-color);
+	border-bottom: 1px solid var(--ion-border-color);
+	backdrop-filter: blur(8px);
+}
+
+ion-card, .product-card {
+	background: var(--ion-card-background) !important;
+	border: 1px solid var(--ion-border-color) !important;
+	border-radius: var(--ion-border-radius) !important;
+	box-shadow: var(--ion-box-shadow) !important;
+}
+
+ion-badge {
+	background: rgba(54,230,208,0.12);
+	color: var(--ion-color-primary-contrast);
+	font-weight: 700;
+}
+
+button, ion-button {
+	font-family: var(--ion-font-family);
+}
+
+/* Centered checkout modal */
+.checkout-modal.centered-modal {
+	--backdrop-opacity: 0.35;
+}
+.checkout-modal.centered-modal .modal-wrapper {
+	align-items: center !important;
+	justify-content: center !important;
+}
+.checkout-modal.centered-modal .modal-wrapper .modal-content,
+.checkout-modal.centered-modal dialog {
+	width: min(720px, 95vw) !important;
+	max-height: 90vh !important;
+	border-radius: 12px !important;
+	overflow: auto !important;
+	padding: 0 !important;
+}
+
+.checkout-modal.centered-modal ion-modal {
+	--border-radius: 12px;
+}
