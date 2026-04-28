@@ -15,7 +15,7 @@ import { CheckoutModalComponent } from './checkout.modal';
 })
 export class CartPage implements OnInit {
 
-  apiUrl = 'http://192.168.1.11:3000';
+  apiUrl = 'http://smartshop-backend.up.railway.app';
   cartItems: any[] = [];
 
   constructor(

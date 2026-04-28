@@ -20,7 +20,7 @@ import { RouterModule, Router } from '@angular/router';
 })
 export class HomePage implements OnInit {
 
-  apiUrl = 'http://192.168.1.11:3000';
+  apiUrl = 'http://smartshop-backend.up.railway.app';
 
   items: any[] = [];
   cartItems: any[] = [];

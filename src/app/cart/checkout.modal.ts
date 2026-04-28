@@ -80,7 +80,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 export class CheckoutModalComponent {
   @Input() cartItems: any[] = [];
   @Input() total = 0;
-  @Input() apiUrl = 'http://192.168.1.11:3000';
+  @Input() apiUrl = 'http://smartshop-backend.up.railway.app';
 
   order: any = {
     fullName: '',
